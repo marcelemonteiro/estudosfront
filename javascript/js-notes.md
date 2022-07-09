@@ -6,7 +6,7 @@
 
 - [Scope](#escope)
 
-## Scope <a id="scope"></a>
+## <a name="scope"></a> Scope 
 
 Escopo é a acessibilidade de objetos, variáveis e funções em diferentes partes do código de uma aplicação.
 - Escopo Global
