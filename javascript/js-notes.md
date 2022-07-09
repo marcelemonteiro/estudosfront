@@ -9,7 +9,7 @@ O padrão JavaScript é ECMAScript, que se mantém em todos os navegadores. O EC
 ## Principais tópicos
 
 - [Como o JavaScript funciona](#intro)
-- [Scope](#escope)
+- [Scope](#scope)
 - [Hoisting](#hoisting)
 - [Nested Scopes](#nested-scopes)
 - [ES6+ Features](#es6-features)
