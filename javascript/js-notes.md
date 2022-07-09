@@ -2,9 +2,30 @@
 
 [descrição sobre o que é o javascript e como ele funciona, como os navegadores o utilizam e etc]
 
+JavaScript é uma linguagem de script para páginas Web, baseada em protótipos, multiparadigma e dinâmica. 
+
+O padrão JavaScript é ECMAScript, que se mantém em todos os navegadores. O ECMAScript 6 (ECMAScript 2015) é totalmente suportado em todos os navegadores modernos. 
+
 ## Principais tópicos
 
+- [Como o JavaScript funciona](#intro)
 - [Scope](#escope)
+- [Hoisting](#hoisting)
+- [Nested Scopes](#nested-scopes)
+- [ES6+ Features](#es6-features)
+- [Pure Functions (Funções puras)](#pure-functions)
+- [Closure](#closure)
+- [Currying](#currying)
+- [Higher-Order Functions](#higherOrder-function)
+- [Callback Hell](#callback-hell)
+- [Diferença entre null e undefined](#null-undefined)
+- [O que é programação reativa](#programacao-reativa)
+
+## <a name="intro"></a> Como o JavaScript funciona
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+https://medium.com/reactbrasil/como-o-javascript-funciona-dentro-da-engine-v8-5-dicas-sobre-como-escrever-c%C3%B3digo-otimizado-e05af6088fd5
 
 ## <a name="scope"></a> Scope 
 
@@ -20,5 +41,50 @@ Escopo é a acessibilidade de objetos, variáveis e funções em diferentes part
 > - `const`: têm escopo de bloco, não permite redeclaração e nem modificação do valor
 > - `let`: tem escopo de bloco, não permite redeclaração, mas o valor da variável pode ser modificado
 > - `var`: não tem escopo de bloco, permite redeclaraçaõ de modificação do valor → *por esses motivos o seu uso não é indicado*
+
+## <a name="hoisting"></a> Hoisting 
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+## <a name="nested-scopes"></a> Nested Scopes (escopos aninhados)
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+## <a name="es6-features"></a> ES6+ Features
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+## <a name="pure-functions"></a> Pure Functions (Funções puras)
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+## <a name="closure"></a> Closure
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+## <a name="currying"></a> Currying
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+## <a name="higherOrder-function"></a> Higher-Order Functions
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+## <a name="callback-hell"></a> Callback Hell
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+## <a name="null-undefined"></a> Diferença entre null e undefined
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+## <a name="programacao-reativa"></a> O que é programação reativa
+
+<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+
+
+
+
+
 
 
