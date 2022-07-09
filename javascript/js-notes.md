@@ -23,7 +23,7 @@ O padrão JavaScript é ECMAScript, que se mantém em todos os navegadores. O EC
 
 ## <a name="intro"></a> Como o JavaScript funciona
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 https://medium.com/reactbrasil/como-o-javascript-funciona-dentro-da-engine-v8-5-dicas-sobre-como-escrever-c%C3%B3digo-otimizado-e05af6088fd5
 
@@ -44,43 +44,43 @@ Escopo é a acessibilidade de objetos, variáveis e funções em diferentes part
 
 ## <a name="hoisting"></a> Hoisting 
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 ## <a name="nested-scopes"></a> Nested Scopes (escopos aninhados)
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 ## <a name="es6-features"></a> ES6+ Features
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 ## <a name="pure-functions"></a> Pure Functions (Funções puras)
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 ## <a name="closure"></a> Closure
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 ## <a name="currying"></a> Currying
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 ## <a name="higherOrder-function"></a> Higher-Order Functions
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 ## <a name="callback-hell"></a> Callback Hell
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 ## <a name="null-undefined"></a> Diferença entre null e undefined
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 ## <a name="programacao-reativa"></a> O que é programação reativa
 
-<p style="background-color: yellow; color: black; display: inline;">TO-DO!</p>
+TO-DO!
 
 
 
