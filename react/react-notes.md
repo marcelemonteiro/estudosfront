@@ -38,15 +38,10 @@ export default function meuComponente(props) {
 
 Um componente pode ser descrito como uma função JS, mas também pode ser utilizado com classes. 
 
-<aside>
-💡 Sempre inicie os nomes dos componentes com letra MAIÚSCULA, para são serem confundidos com tags do DOM pelo React.
+> 💡 Sempre inicie os nomes dos componentes com letra MAIÚSCULA, para são serem confundidos com tags do DOM pelo React.
 
-</aside>
+> 💡 Todos os componentes React tem que agir como funções puras em relação às suas props. Ou seja, não é possível alterar o valor de um prop.
 
-<aside>
-💡 Todos os componentes React tem que agir como funções puras em relação às suas props. Ou seja, não é possível alterar o valor de um prop.
-
-</aside>
 
 ### State
 
@@ -58,20 +53,12 @@ this.setState((state, props) => {
 });
 ```
 
-<aside>
-💡 O state nunca deve ser alterado diretamente, sempre use **setState()** para alterar o valor do state.
+> 💡 O state nunca deve ser alterado diretamente, sempre use **setState()** para alterar o valor do state.
 
-</aside>
+> 💡 As atualizações do state podem ser assíncronas. O React pode agrupar várias chamadas setState() em uma única atualização. Como o this.props e o this.state podem ser atualizados de forma assíncrona, você não deve confiar em seus valores para calcular o próximo state.
 
-<aside>
-💡 As atualizações do state podem ser assíncronas. O React pode agrupar várias chamadas setState() em uma única atualização. Como o this.props e o this.state podem ser atualizados de forma assíncrona, você não deve confiar em seus valores para calcular o próximo state.
+> 💡 O state é uma propriedade local, ou seja, não é acessível a nenhum outro componente → Fluxo de dados top-down ou unidirecional.
 
-</aside>
-
-<aside>
-💡 O state é uma propriedade local, ou seja, não é acessível a nenhum outro componente → Fluxo de dados top-down ou unidirecional.
-
-</aside>
 
 ### Children
 
@@ -84,10 +71,8 @@ São os elementos filhos de um componente. Podem ser acessados a partir das prop
 
 ## Eventos
 
-<aside>
-💡 Para evitar um comportamento padrão → `event.preventDefault()`
+> 💡 Para evitar um comportamento padrão → `event.preventDefault()`
 
-</aside>
 
 ### Bind
 
@@ -99,10 +84,8 @@ Um forma de contornar isso e não precisar do bind é usando arrow function: `on
 
 Mas uma callback diferente vai ser criada toda vez que o componente for renderizado!
 
-<aside>
-💡 Para evitar que um componente seja renderiado basta retornar null.
+> 💡 Para evitar que um componente seja renderiado basta retornar null.
 
-</aside>
 
 ```jsx
 // ex: O Componente só será renderizado quando tiver uma determinada prop
@@ -115,10 +98,7 @@ if (!props.nome) {
 
 Basta iterar com uma função `map()`. 
 
-<aside>
-💡 Cada item gerado dessa forma deve ter uma **key**. Ela serve para ajudar o React a identificar quais itens sofreram alterações.
-
-</aside>
+> 💡 Cada item gerado dessa forma deve ter uma **key**. Ela serve para ajudar o React a identificar quais itens sofreram alterações.
 
 ## Formulários
 
@@ -160,15 +140,11 @@ Permite executar **efeitos colaterias** (operação que podem afetar outros comp
 
 Ele funciona exatamente como os ciclos de vida componentDidMount, componentDidUpdate e componentWillAmount combinados. E é executado depois da primeira renderização e depois de toda atualização. 
 
-<aside>
-💡 **Efeitos com limpeza:** Em uma classe geralmente você configura uma subscription no componentDidMount e limpa no componentWillAmount. Com hooks basta retornar uma função que o React irá executá-la quando for a hora de limpar (quando o component desmonta).
+> 💡 **Efeitos com limpeza:** Em uma classe geralmente você configura uma subscription no componentDidMount e limpa no componentWillAmount. Com hooks basta retornar uma função que o React irá executá-la quando for a hora de limpar (quando o component desmonta).
 
-</aside>
 
-<aside>
-💡 **“Pulando” efeitos:** Você pode dizer ao React para pular a aplicação de um efeito se certos valores não tiverem mudado entre as renderizações. Para fazer isso, passe um array como segundo argumento opcional ao useEffect().
+> 💡 **“Pulando” efeitos:** Você pode dizer ao React para pular a aplicação de um efeito se certos valores não tiverem mudado entre as renderizações. Para fazer isso, passe um array como segundo argumento opcional ao useEffect().
 
-</aside>
 
 ```jsx
 useEffect(() => {
