@@ -1,9 +1,24 @@
 # React
 
 Tópicos:
-- [Effect Hook] (#effect-hook)
+- [JSX](#jsx)
+- [Elementos](#elementos)
+- [Componentes](#componentes)
+	- [State](#state)
+	- [Children](#children)
+- [Eventos](#eventos)
+- [Bind](#bind)
+- [Lista de elementos](#lista-elementos)
+- [Formulários](#formularios)
+- [State Lift](#state-lift)
+-	[State x Props](#state-props)
+- [Hooks](#hooks)
+	- [Regras dos hooks](#regras-hooks)
+	- [Beneficíos dos hooks](#beneficios-hooks)
+	- [Effect hook](#effect-hook)
 
-## JSX
+
+## <a name="jsx"></a> JSX
 
 JSX é uma **extensão React para Javascript** que fornece uma maneira de estruturar a renderização de componentes usando uma sintaxe parecida com HTML (parece um acoplamento de tags HTML com JS). 
 
@@ -19,7 +34,7 @@ JSX também é uma **expressão**, portanto é possível utilizá-la dentro de b
 
 Curiosidade: O JSX representa objetos. O Babel compila o JSX para chamadas `React.createElement()`.   
 
-## Elementos
+## <a name="elementos"></a> Elementos
 
 Elementos são os menores blocos de contrução de aplicativos React. Um elemento descreve o que você quer ver na tela. 
 
@@ -27,7 +42,7 @@ O React DOM é responsável por atualizar o DOM para exibir os elementos React.
 
 O React somente atualiza o necessário, pois é React DOM compara o elemento novo e seus filhos com os anteriores e somente aplica as modificações necessárias na DOM para levá-lo ao estado necessário.
 
-## Componentes
+## <a name="componentes"></a> Componentes
 
 Os componentes permitem você dividir a UI (Interface do usuário) em partes **independentes e reutilizáveis.**  
 
@@ -46,7 +61,7 @@ Um componente pode ser descrito como uma função JS, mas também pode ser utili
 > 💡 Todos os componentes React tem que agir como funções puras em relação às suas props. Ou seja, não é possível alterar o valor de um prop.
 
 
-### State
+### <a name="state"></a> State
 
 É um propriedade do componente onde colocamos dados que, quando mudarmos, devem causar um nova renderização. 
 
@@ -63,7 +78,7 @@ this.setState((state, props) => {
 > 💡 O state é uma propriedade local, ou seja, não é acessível a nenhum outro componente → Fluxo de dados top-down ou unidirecional.
 
 
-### Children
+### <a name="children"></a> Children
 
 São os elementos filhos de um componente. Podem ser acessados a partir das props. 
 
@@ -72,12 +87,12 @@ São os elementos filhos de um componente. Podem ser acessados a partir das prop
 // "Blá" = props.children
 ```
 
-## Eventos
+## <a name="eventos"></a> Eventos
 
 > 💡 Para evitar um comportamento padrão → `event.preventDefault()`
 
 
-### Bind
+## <a name="bind"></a> Bind
 
 Em Javascript os métodos da classe não são vinculados por padrão. Se você esquecer de fazer o bind de um método (handleClick, por ex) e passá-lo para um onClick, o this será undefined quando a função for chamada. 
 
@@ -97,29 +112,29 @@ if (!props.nome) {
 }
 ```
 
-## Lista de elementos
+## <a name="lista-elementos"></a> Lista de elementos
 
 Basta iterar com uma função `map()`. 
 
 > 💡 Cada item gerado dessa forma deve ter uma **key**. Ela serve para ajudar o React a identificar quais itens sofreram alterações.
 
-## Formulários
+## <a name="formularios"></a> Formulários
 
 **Componentes controlados →** Componente que renderiza um formulário também controla o que acontece nesse formulário nas entradas subsequentes do usuário. Um input cujo valor é controlado pelo React dessa maneira é chamado de componente controlado. 
 
 Em React o input, textarea e select funcionam de forma semelhante. Os três possuem uma propriedade **value**. 
 
-## Elevando o state (state lift)
+## <a name="state-lift"></a> Elevando o state (state lift)
 
 O **compartilhamento do state** é alcançado ao movê-lo para o elemento pai comum aos componentes que precisam dele. 
 
-## State x Props
+## <a name="state-props"></a> State x Props
 
 **State →** utilizado para valores dinâmicos.
 
 **Props →** utilizados para passar valores entre componentes. São valores que os componentes recebem do componente pai. São como argumentos de uma função.
 
-## Hooks
+## <a name="hooks"></a> Hooks
 
 São uma nova adiação ao React 16.8. Eles permitem que você use o state e outros recursos do React sem escrever uma classe. 
 
@@ -127,12 +142,12 @@ Hooks são basicamente funções que permitem a você ligar-se aos recursos do s
 
 O React fornece alguns hooks, mas você também pode criar os seus próprios. 
 
-### Regras dos hooks
+### <a name="regras-hooks"></a> Regras dos hooks
 
 - Apenas chame hooks no nível mais alto do código. Não chame dentro de loops, condições ou funções aninhadas.
 - Apenas chame hooks em componentes funcionais, nunca de funções comuns.
 
-### Beneficíos dos hooks
+### <a name="beneficios-hooks"></a> Beneficíos dos hooks
 
 - Reutilizar lógicas de state (hooks costumizados)
 - Não usar classes kkkkkkk
