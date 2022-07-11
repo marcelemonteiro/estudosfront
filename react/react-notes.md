@@ -1,5 +1,8 @@
 # React
 
+Tópicos:
+- Effect Hook (#effect-hook)
+
 ## JSX
 
 JSX é uma **extensão React para Javascript** que fornece uma maneira de estruturar a renderização de componentes usando uma sintaxe parecida com HTML (parece um acoplamento de tags HTML com JS). 
