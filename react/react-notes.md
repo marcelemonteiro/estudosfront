@@ -137,7 +137,7 @@ O React fornece alguns hooks, mas você também pode criar os seus próprios.
 - Reutilizar lógicas de state (hooks costumizados)
 - Não usar classes kkkkkkk
 
-### Effect hook
+### <a name="effect-hook"></a> Effect hook
 
 Permite executar **efeitos colaterias** (operação que podem afetar outros componentes e não podem ser feita durante a renderização, ex: obtenção de dados [data fetching], subscriptions ou mudanças manuais na DOM) em componentes funcionais. 
 
